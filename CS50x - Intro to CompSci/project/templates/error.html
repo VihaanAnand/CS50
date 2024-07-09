@@ -1,0 +1,10 @@
+{% extends "template.html" %}
+
+{% block title %}
+        Get Outta Here! - Error
+{% endblock %}
+
+{% block content %}
+        <img alt="{{ top }}" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://i.imgur.com/CsCgN7Ll.png&width=400" title="{{ top }}">
+        <p style="text-align: center;">Try again at <a href="{{ retry }}">{{ retry }}</a>.</p>
+{% endblock %}

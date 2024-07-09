@@ -1,0 +1,119 @@
+@font-face {
+        font-family: "San Francisco";
+        font-weight: 400;
+        src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+        font-family: "San Francisco", "Roboto", "Segoe UI", sans-serif;
+}
+
+footer p {
+        font-size: 12px;
+        text-align: center;
+}
+
+a {
+        color: black;
+        text-decoration: none;
+}
+
+nav {
+        border-bottom: 1px solid black;
+        padding: 8px;
+}
+
+.big-butt {
+        border: 1px solid black;
+        border-radius: 8px;
+        display: inline-block;
+        height: 10vw;
+        margin: 64px;
+        width: 25vw;
+}
+
+.cont {
+        text-align: center;
+}
+
+.eighth-inp {
+        border: 1px solid gray;
+        border-radius: 8px;
+        font-size: 24px;
+        height: 8vh;
+        margin-bottom: 8px;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        margin-top: 8px;
+        width: 8vw;
+}
+
+.formhead {
+        font-size: 32px;
+        text-align: center;
+}
+
+.fullscreen-inp {
+        border: 1px solid gray;
+        border-radius: 8px;
+        font-size: 32px;
+        height: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+}
+
+.halfscreen-inp {
+        border: 1px solid gray;
+        border-radius: 8px;
+        font-size: 32px;
+        height: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 40vw;
+}
+
+.nav-link {
+        color: black;
+        font-size: 32px;
+        padding: 64px;
+        text-decoration: none;
+}
+
+.quarter-inp {
+        border: 1px solid gray;
+        border-radius: 8px;
+        font-size: 24px;
+        height: 7vh;
+        margin-bottom: 8px;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        margin-top: 8px;
+        width: 19vw;
+}
+
+.submit {
+        background-color: #0080ff;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 24px;
+        height: 8vh;
+        margin-top: 64px;
+        margin-left: 128px;
+        margin-right: 128px;
+        text-align: center;
+        width: 32vw;
+}
+
+.big-butt h1 {
+        text-align: center;
+}
+
+#arrowr {
+        width: 5vw;
+}
+
+#logo {
+        font-size: 64px;
+}

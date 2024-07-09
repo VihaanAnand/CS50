@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% block title %}
+        Lightning Maths - Statistics
+{% endblock %}
+
+{% block content %}
+        <div class="cont">
+                <h2 class="formhead">Stats</h2>
+                <p>Average Accuracy: {{ avg_acc_glob }}%</p>
+                <p>Average Time Per Question: {{ avg_time_glob }} seconds</p>
+        </div>
+{% endblock %}
