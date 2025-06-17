@@ -1,1 +1,0 @@
-SELECT title FROM movies where YEAR >= 2018 ORDER BY title ASC;
