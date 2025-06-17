@@ -1,0 +1,41 @@
+table {
+        margin: 1vw;
+}
+
+.certificate {
+        margin: 8px;
+        padding: 8px;
+        width: 32vw;
+}
+
+.trophy {
+        margin: 8px;
+        padding: 8px;
+        height: 24vw;
+}
+
+#intro h2, #intro2 h2 {
+        font-size: 64px;
+        text-align: center;
+}
+
+#projects td {
+        border: 1px solid black;
+        font-size: 24px;
+        height: 32vw;
+        padding: 8px;
+        text-align: center;
+        width: 50vw;
+}
+
+#projects td h2 {
+        font-size: 48px;
+}
+
+#projects td p {
+        overflow-wrap: anywhere;
+}
+
+#projects td:hover {
+        background-color: #abcdef;
+}

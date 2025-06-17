@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,151,1000,150,603,135,854,-98,788,570,760&display=swap" rel="stylesheet">;
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let correct = document.querySelectorAll(".correct");
+                for (let a = 0; a < correct.length; a++) {
+                    correct[a].addEventListener("click", function() {
+                        correct[a].style.backgroundColor = "rgba(0, 127.5, 0, 0.5)";
+                        document.querySelector("#feedback1").innerHTML = "Correct!";
+                        document.querySelector(`#question1`).style.color = "rgba(0, 127.5, 0)";
+                        document.querySelector(`#feedback1`).style.color = "rgba(0, 127.5, 0)";
+                    });
+                }
+                let incorrect = document.querySelectorAll(".incorrect");
+                for (let b = 0; b < incorrect.length; b++) {
+                    incorrect[b].addEventListener("click", function() {
+                        incorrect[b].style.backgroundColor = "rgba(255, 0, 0, 0.5)";
+                        document.querySelector("#feedback1").innerHTML = "Incorrect";
+                        document.querySelector(`#question1`).style.color = "rgba(255, 0, 0)";
+                        document.querySelector(`#feedback1`).style.color = "rgba(255, 0, 0)";
+                    });
+                }
+                let number = 5;
+                let answers = ["", "", "pyttsx3", "143,091", "137", "true"];
+                for (let c = 2; c <= number; c++) {
+                    let userAnswer = document.querySelector(`#answer${c}`);
+                    let submit = document.querySelector(`#submit${c}`);
+                    submit.addEventListener("click", function() {
+                        if (answers[c] === userAnswer.value) {
+                            userAnswer.style.color = "rgba(0, 127.5, 0)";
+                            document.querySelector(`#feedback${c}`).innerHTML = "Correct!";
+                            document.querySelector(`#question${c}`).style.color = "rgba(0, 127.5, 0)";
+                            document.querySelector(`#feedback${c}`).style.color = "rgba(0, 127.5, 0)";
+                        } else {
+                            userAnswer.style.color = "rgba(255, 0, 0)";
+                            document.querySelector(`#feedback${c}`).innerHTML = "Incorrect";
+                            document.querySelector(`#question${c}`).style.color = "rgba(255, 0, 0)";
+                            document.querySelector(`#feedback${c}`).style.color = "rgba(255, 0, 0)";
+                        }
+                    });
+                }
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3 id="question1">What is Fiftyville's airport code?</h3>
+                <h4 id="feedback1"></h4>
+                <button class="incorrect">CFV</button>
+                <button class="incorrect">SFV</button>
+                <button class="correct">CSF</button>
+                <button class="incorrect">SSF</button>
+                <button class="incorrect">`NOTA` (None of the above)</button>
+            </div>
+            <hr>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3 id="question2">What is the name of the library used in Python to create text-to-speech?</h3>
+                <h4 id="feedback2"></h4>
+                <input id="answer2" type="text"></input>
+                <button id="submit2">Submit</button>
+                <hr>
+                <h3 id="question3">How many words are in the `large` dictionary in `Speller`?</h3>
+                <h4 id="feedback3"></h4>
+                <input id="answer3" type="text"></input>
+                <button id="submit3">Submit</button>
+                <hr>
+                <h3 id="question4">The word "memory" was spoken ___ times in Lecture 5.</h3>
+                <h4 id="feedback4"></h4>
+                <input id="answer4" type="text"></input>
+                <button id="submit4">Submit</button>
+                <hr>
+                <h3 id="question5">According to the survey taken in Lecture 7, Wordle50 got 25 votes. True or false?</h3>
+                <h4 id="feedback5"></h4>
+                <input id="answer5" type="text"></input>
+                <button id="submit5">Submit</button>
+            </div>
+        </div>
+    </body>
+
+</html>

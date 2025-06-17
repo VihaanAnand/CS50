@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+    <form action="/acct/settings" method="post">
+        Currency Change
+        <div class="mb-3">
+            <select class="form-select mx-auto w-auto" name="currency">
+                <option disabled>Currency</option>
+                {% for currency in currencies %}
+                    <option value="{{ currency }}" {{ currencies[currency]["seld"] }}>{{ currency }} {{ currencies[currency]["fullform"] }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}
